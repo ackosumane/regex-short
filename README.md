@@ -28,6 +28,8 @@ if(RegExEmail(email)){ // Test email for correct format
 return false;
 ```
 
+[RegEx example home page](https://regexexample.com/)
+
 ## Props
 
 - RegExEmail
