@@ -1,0 +1,22 @@
+{
+  "name": "regex-short",
+  "version": "1.0.0",
+  "description": "Short constants for common regular expressions",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "homepage": "https://regexexample.com/repo/regex-short",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ackosumane/regex-short"
+  },
+  "keywords": [
+    "regular-expressions",
+    "regular",
+    "expressions",
+    "regex"
+  ],
+  "author": "Aleksandar M.",
+  "license": "MIT"
+}
