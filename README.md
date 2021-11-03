@@ -19,13 +19,10 @@ npm install regex-short --save
 ```js
 import {testEmail} from 'regex-short'
 
-let email = 'example@domain.com';
+testEmail('example@domain.com') // true
+testEmail('example@domain.c') // false
 
-if(testEmail(email)){ // Test email for correct format
-    return true;
-}
-
-return false;
+testUUIDHash('d7fddffb-44e6-4c90-b56e-0b1a45896739') // true
 ```
 
 [Home page](https://regexexample.com/)
