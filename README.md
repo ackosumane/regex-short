@@ -17,34 +17,34 @@ npm install regex-short --save
 ## Basic usage
 
 ```js
-import {RegExEmail} from 'regex-short'
+import {testEmail} from 'regex-short'
 
 let email = 'example@domain.com';
 
-if(RegExEmail(email)){ // Test email for correct format
+if(testEmail(email)){ // Test email for correct format
     return true;
 }
 
 return false;
 ```
 
-[RegEx example home page](https://regexexample.com/)
+[Home page](https://regexexample.com/)
 
 ## Props
 
-- RegExEmail
-- RegExDomain
-- RegExURL
-- RegExPhone
-- RegExHashTag
-- RegExBCryptHash
-- RegExSHA224
-- RegExSHA256
-- RegExSHA384
-- RegExSHA512
-- RegExJWTToken256
-- RegExJWTToken384
-- RegExJWTToken512
-- RegExUUIDHash
-- RegExDigits
-- RegExAlphanumeric
+- testEmail
+- testDomain
+- testURL
+- testPhone
+- testHashTag
+- testBCryptHash
+- testSHA224
+- testSHA256
+- testSHA384
+- testSHA512
+- testJWTToken256
+- testJWTToken384
+- testJWTToken512
+- testUUIDHash
+- testDigits
+- testAlphanumeric
