@@ -17,7 +17,7 @@ npm install regex-short --save
 ## Basic usage
 
 ```js
-import {testEmail} from 'regex-short'
+import {testEmail, testUUIDHash} from 'regex-short'
 
 testEmail('example@domain.com') // true
 testEmail('example@domain.c') // false
