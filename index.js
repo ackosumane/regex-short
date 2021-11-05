@@ -41,11 +41,58 @@ exports.testJWTToken512 = testJWTToken512
 let testUUIDHash = str => /^([a-z0-9]{8})\-([a-z0-9]{4})\-([a-z0-9]{4})\-([a-z0-9]{4})\-([a-z0-9]{12})$/.test(str);
 exports.testUUIDHash = testUUIDHash
 
+let testIPAddress = str => /^(\d){1,4}\.(\d){1,4}\.(\d){1,4}\.(\d){1,4}$/.test(str);
+exports.testIPAddress = testIPAddress
+
+let testMD5Hash = str => /^[a-z0-9]{32}$/.test(str);
+exports.testMD5Hash = testMD5Hash
+
+// Digits
+
 let testDigits = str => /\d+/.test(str);
 exports.testDigits = testDigits
 
+let testNonDigits = str => /\D+/.test(str);
+exports.testNonDigits = testNonDigits
+
+let testStartWithDigit = str => /^\d/.test(str);
+exports.testStartWithDigit = testStartWithDigit
+
+let testStartWithDigits = str => /^\d+/.test(str);
+exports.testStartWithDigits = testStartWithDigits
+
+let testEndWithDigit = str => /\d$/.test(str);
+exports.testStartWithDigit = testStartWithDigit
+
+
+// Letters
+
 let testAlphanumeric = str => /\w+/.test(str);
 exports.testAlphanumeric = testAlphanumeric
+
+let testNonAlphanumeric = str => /\W+/.test(str);
+exports.testNonAlphanumeric = testNonAlphanumeric
+
+let testOnlyLetters = str => /[a-zA-Z]/.test(str);
+exports.testOnlyLetters = testOnlyLetters
+
+let testNonLetters = str => /[^a-zA-Z]/.test(str);
+exports.testNonLetters = testNonLetters
+
+let testStartLetter = str => /^[a-zA-Z]/.test(str);
+exports.testStartLetter = testStartLetter
+
+let testStartLetters = str => /^[a-zA-Z]+/.test(str);
+exports.testStartLetters = testStartLetters
+
+let testEndLetter = str => /[a-zA-Z]$/.test(str);
+exports.testEndLetter = testEndLetter
+
+let testOnlyLowerCase = str => /^[a-z]+$/.test(str);
+exports.testOnlyLowerCase = testOnlyLowerCase
+
+let testOnlyUpperCase = str => /^[A-Z]+$/.test(str);
+exports.testOnlyUpperCase = testOnlyUpperCase
 
 exports.default = {
     testEmail: testEmail,
@@ -62,6 +109,26 @@ exports.default = {
     testJWTToken384: testJWTToken384,
     testJWTToken512: testJWTToken512,
     testUUIDHash: testUUIDHash,
+    testIPAddress: testIPAddress,
+    testMD5Hash: testMD5Hash,
+
+    // Digits
+
     testDigits: testDigits,
+    testNonDigits: testNonDigits,
+    testStartWithDigit: testStartWithDigit,
+    testStartWithDigits: testStartWithDigits,
+    testEndWithDigit: testEndWithDigit,
+
+    // Letters
+
     testAlphanumeric: testAlphanumeric,
+    testNonAlphanumeric: testNonAlphanumeric,
+    testOnlyLetters: testOnlyLetters,
+    testNonLetters: testNonLetters,
+    testStartLetter: testStartLetter,
+    testStartLetters: testStartLetters,
+    testEndLetter: testEndLetter,
+    testOnlyLowerCase: testOnlyLowerCase,
+    testOnlyUpperCase: testOnlyUpperCase,
 }
