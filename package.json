@@ -1,6 +1,6 @@
 {
   "name": "regex-short",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "Short constants for common regular expressions",
   "main": "index.js",
   "scripts": {
